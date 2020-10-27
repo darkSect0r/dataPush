@@ -1,4 +1,7 @@
 # dataPush version 1.0 Pre-Release
+
+<img src="https://i.gyazo.com/7cc534dc4adf206b9cb7634c96f04140.png">
+
 Pre-Release Date: <b>10-27-2020</b><br>
 Official Release Date: <b>1-2-2021</b>
 <hr>

@@ -1,0 +1,51 @@
+{
+"manifest_version": 2,
+"name": "dataPush",
+"version": "1.0",
+"description": "Sends selected text to Pastebin.com",
+"homepage_url": "https://darksector.info",
+
+"icons": 
+	{
+		"48": "icons/dpico48.png",
+		"96": "icons/dpico96.png"
+	},
+	
+"browser_specific_settings":
+	{
+		"gecko":
+		{
+			"id": "darksect0r@pm.me",
+			"strict_min_version": "60"
+		}
+	},
+
+"browser_action":
+	{
+		"default_icon": "icons/dpico32.png",
+		"default_title": "dataPush",
+		"default_popup": "popup/panel.html"
+	},
+
+"background":
+	{
+		"scripts": ["scDaemon.js"]
+	},
+	
+"commands":
+	{
+		"scFire":{ "suggested_key": { "default": "Ctrl+Shift+V" } }
+	},
+	
+"options_ui":
+	{
+		"page": "options.html",
+		"browser_style": true
+	},
+	
+"permissions":
+	[
+		"<all_urls>",
+		"tabs"
+	]	  
+}

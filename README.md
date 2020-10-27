@@ -17,7 +17,7 @@ Feel free to contribute where ever you see fit. Thank you to all those who contr
 <hr>
 <b>How to use:</b> There are 4 easy steps to start testing out this extension!<br>
 <br>&ensp;&ensp;1. Download the repository and extract it to any folder.
-<br>&ensp;&ensp;2. Open Firefox and type "about:debugging" in the URL box. Hit Enter.
+<br>&ensp;&ensp;2. Open Firefox and type "about:debugging" in the URL box then hit Enter.
 <br>&ensp;&ensp;3. Click "This Firefox" then under "Temporary Extensions" click the "Load Temporary Add-on..." button.
 <br>&ensp;&ensp;4. Finally, browse to your extracted folder and click on any file within the extension's directory to open and load the extension.
 <br><br>Thats it! The extension will automatically load and you can start using it right away.

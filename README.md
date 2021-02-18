@@ -12,8 +12,11 @@ Instead, simply open dataPush, paste your text and click submit and your all don
 <br>
 <b>Future Plans:</b> In the future we plan on supporting many other websites, as well as adding more and more features as time goes on.<br>
 Feel free to contribute where ever you see fit. Thank you to all those who contribute to this project, it wouldn't be possible without you.<br>
+Hey what about chrome extension after firefox betrayed our privacy?
 <br>
-<b>Contributors:</b> IamLupo(Programmer/Consultant)
+<b>Contributors:</b> 
+IamLupo(Programmer/Consultant)
+TheDebianGuy(Programmer)
 <hr>
 <b>How to use:</b> There are 4 easy steps to start testing out this extension!<br>
 <br>&ensp;&ensp;1. Download the repository and extract it to any folder.

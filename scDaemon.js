@@ -1,8 +1,38 @@
-	function openPastebin(text) {
+    function openPastebin(text) {
 	browser.tabs.create({url:"https://pastebin.com/"}).then(
 		(tab) => {
 			browser.tabs.executeScript({
-				file: "/execute.js",
+				file: "/execute-pastebin.js",
+				runAt: "document_idle"
+			}).then(
+				() => {
+					browser.tabs.sendMessage(tab.id, {command: "sendTextSC", text: text});
+				}
+			);
+		}
+	);
+}
+
+	function openGhostbin(text) {
+	browser.tabs.create({url:"https://throwbin.io/"}).then(
+		(tab) => {
+			browser.tabs.executeScript({
+				file: "/execute-throwbin.js",
+				runAt: "document_idle"
+			}).then(
+				() => {
+					browser.tabs.sendMessage(tab.id, {command: "sendTextSC", text: text});
+				}
+			);
+		}
+	);
+}
+
+	function openThrowbin(text) {
+	browser.tabs.create({url:"https://ghostbin.com/"}).then(
+		(tab) => {
+			browser.tabs.executeScript({
+				file: "/execute-ghostbin.js",
 				runAt: "document_idle"
 			}).then(
 				() => {
@@ -15,6 +45,8 @@
 
 function scFire()
 {
+    var default = "Pastebin"; //default site
+	
 	// Insert the content.js to the active tab
 	browser.tabs.executeScript({
 		file: "/getText.js",
@@ -32,7 +64,9 @@ function scFire()
 					(
 						(response) =>
 						{	
-							openPastebin(response.text);
+						    if (default === "Pastebin") openPastebin(response.text);
+							else if (default === "Ghostbin") openGhostbin(response.text);
+							else if (default === "Throwbin") openThrowbin(response.text);
 						}
 					);
 				}

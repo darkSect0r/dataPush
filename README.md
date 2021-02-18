@@ -1,6 +1,6 @@
 # dataPush version 1.1 Pre-Release
 
-<img src="https://i.gyazo.com/7cc534dc4adf206b9cb7634c96f04140.png">
+<img src="popup/screenshot.png">
 <br>
  <b><- Better be DD/MM/YYYY -></b>
  <br>
@@ -15,7 +15,7 @@ Instead, simply open dataPush, paste your text and click submit and your all don
 <br>
 <b>Future Plans:</b> In the future we plan on supporting many other websites, as well as adding more and more features as time goes on.<br>
 Feel free to contribute where ever you see fit. Thank you to all those who contribute to this project, it wouldn't be possible without you.<br>
-<b>Hey what about chrome extension after firefox betrayed our privacy</b>
+<b>Hey what about chrome extension after firefox betrayed our privacy?</b>
 <br>
 <b>Contributors:</b> 
 <br>IamLupo(Programmer/Consultant)<br>

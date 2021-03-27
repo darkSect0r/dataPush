@@ -43,10 +43,30 @@ function listenForClicks(){
 		}
 		*/
 		
-		function Go(text, format, exp, stat, check, disab, pass, name){
+		function GoPastebin(text, format, exp, stat, check, disab, pass, name){
 			browser.tabs.create({url:"https://pastebin.com/"}).then((tab) => {
 				browser.tabs.executeScript({
-					file: "/execute.js",
+					file: "/execute-pastebin.js",
+					runAt: "document_idle"
+				}).then(() => { browser.tabs.sendMessage(tab.id, {command: "sendTextBTN", text: text, format: format, exp: exp, stat: stat, check: check, disab: disab, pass: pass, name: name});
+				}).then(() => { setTimeout(function(){ window.close(); }, 3000); });
+			});
+		}
+		
+		function GoGhostbin(text, format, exp, stat, check, disab, pass, name){
+			browser.tabs.create({url:"https://ghostbin.com/"}).then((tab) => {
+				browser.tabs.executeScript({
+					file: "/execute-ghostbin.js",
+					runAt: "document_idle"
+				}).then(() => { browser.tabs.sendMessage(tab.id, {command: "sendTextBTN", text: text, format: format, exp: exp, stat: stat, check: check, disab: disab, pass: pass, name: name});
+				}).then(() => { setTimeout(function(){ window.close(); }, 3000); });
+			});
+		}
+		
+		function GoThrowbin(text, format, exp, stat, check, disab, pass, name){
+			browser.tabs.create({url:"https://throwbin.io/"}).then((tab) => {
+				browser.tabs.executeScript({
+					file: "/execute-throwbin.js",
 					runAt: "document_idle"
 				}).then(() => { browser.tabs.sendMessage(tab.id, {command: "sendTextBTN", text: text, format: format, exp: exp, stat: stat, check: check, disab: disab, pass: pass, name: name});
 				}).then(() => { setTimeout(function(){ window.close(); }, 3000); });
@@ -65,6 +85,32 @@ function listenForClicks(){
 			}
 		}
 
+		function siteCheck(){
+			switch(document.getElementById("disSite").value){
+				case "Pastebin":
+					document.getElementById("nameDis").removeAttribute("disabled");
+					document.getElementById("nameDis").removeAttribute("disabled");
+					document.getElementById("syntax").removeAttribute("disabled");
+					document.getElementById("exposure").removeAttribute("disabled");
+					document.getElementById("expire").removeAttribute("disabled");
+					break;
+				
+				case "Ghostbin":
+				    document.getElementById("nameDis").removeAttribute("disabled");
+					document.getElementById("syntax").setAttribute("disabled", true);
+					document.getElementById("exposure").setAttribute("disabled", true);
+					document.getElementById("expire").setAttribute("disabled", true);
+					break;
+					
+				case "Throwbin":
+					document.getElementById("nameDis").setAttribute("disabled", true);
+					document.getElementById("syntax").setAttribute("disabled", true);
+					document.getElementById("exposure").setAttribute("disabled", true);
+					document.getElementById("expire").setAttribute("disabled", true);
+					break;
+			}
+		}
+
 		if (e.target.classList.contains("send")) {
 			switch(document.getElementById("disCB").checked){
 				case true:
@@ -78,11 +124,23 @@ function listenForClicks(){
 					break;
 			}
 			
-			Go(text, format, exp, stat, check, disab, pass, name);
+			if (document.getElementById("disSite").value === "Pastebin")
+			{
+				GoPastebin(text, format, exp, stat, check, disab, pass, name);
+			}
+			else if (document.getElementById("disSite").value === "Ghostbin")
+			{
+				GoGhostbin(text, format, exp, stat, check, disab, pass, name);
+			}
+			else if (document.getElementById("disSite").value === "Throwbin")
+			{
+				GoThrowbin(text, format, exp, stat, check, disab, pass, name);
+			}
 		}
 		else if (e.target.classList.contains("checkB")) {
 			isCheck();
 		}
+		siteCheck();
 	});
 }
 

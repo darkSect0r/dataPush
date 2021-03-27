@@ -1,7 +1,10 @@
-# dataPush version 1.0 Pre-Release
+# dataPush version 1.1 Pre-Release
 
-<img src="https://i.gyazo.com/7cc534dc4adf206b9cb7634c96f04140.png">
-
+<img src="popup/screenshot.png">
+<br>
+ <b><- Better be DD/MM/YYYY -></b>
+ <br>
+Update Date: <b>02-18-2021</b><br>
 Pre-Release Date: <b>10-27-2020</b><br>
 Official Release Date: <b>1-2-2021</b>
 <hr>
@@ -12,8 +15,11 @@ Instead, simply open dataPush, paste your text and click submit and your all don
 <br>
 <b>Future Plans:</b> In the future we plan on supporting many other websites, as well as adding more and more features as time goes on.<br>
 Feel free to contribute where ever you see fit. Thank you to all those who contribute to this project, it wouldn't be possible without you.<br>
+<b>Hey what about a chrome extension after firefox betrayed our privacy?</b>
 <br>
-<b>Contributors:</b> IamLupo(Programmer/Consultant)
+<b>Contributors:</b> 
+<br>IamLupo(Programmer/Consultant)<br>
+TheDebianGuy(Programmer)
 <hr>
 <b>How to use:</b> There are 4 easy steps to start testing out this extension!<br>
 <br>&ensp;&ensp;1. Download the repository and extract it to any folder.
@@ -24,3 +30,4 @@ Feel free to contribute where ever you see fit. Thank you to all those who contr
 <hr>
 <b>Changelog:</b>
 <br>&ensp;&ensp;version 1.0 pre-released!
+<br>&ensp;&ensp;version 1.1 - added ghostbin & throwbin

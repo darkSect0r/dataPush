@@ -2,11 +2,9 @@
 
 <img src="popup/screenshot.png">
 <br>
- <b><- Better be DD/MM/YYYY -></b>
- <br>
-Update Date: <b>02-18-2021</b><br>
 Pre-Release Date: <b>10-27-2020</b><br>
-Official Release Date: <b>1-2-2021</b>
+Official Release Date: <b>TBD</b><br><br>
+<i>Updated: <b>02-18-2021</b></i>
 <hr>
 <b>Title:</b> <i>darkSect0r's</i> Pastebin.com extension for Mozilla Firefox v60+.<br>
 <br>

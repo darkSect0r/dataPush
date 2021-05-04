@@ -50,3 +50,9 @@
   .posTxt {
 	margin-left: 190px;
   }
+
+  .posTxtWeb {
+	margin-left: 190px;
+	font-weight: bold;
+	font-style: italic;
+  }

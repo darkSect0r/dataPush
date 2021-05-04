@@ -26,5 +26,5 @@ TheDebianGuy(Programmer)
 <br><br>Thats it! The extension will automatically load and you can start using it right away.
 <hr>
 <b>Changelog:</b>
-<br>&ensp;&ensp;version 1.0 pre-released!
-<br>&ensp;&ensp;version 1.1 - added ghostbin & throwbin
+<br>&ensp;&ensp;version 1.0 - pre-released!
+<br>&ensp;&ensp;version 1.1 - added ghostbin.com & throwbin.io

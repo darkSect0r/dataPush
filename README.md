@@ -1,6 +1,6 @@
 # dataPush version 1.1 Pre-Release
 
-<img src="popup/screenshot.png">
+<img src="ss.png">
 <br>
 Pre-Release Date: <b>10-27-2020</b><br>
 Official Release Date: <b>TBD</b><br><br>

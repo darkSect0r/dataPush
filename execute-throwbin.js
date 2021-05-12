@@ -11,7 +11,7 @@ browser.runtime.onMessage.addListener(request =>
 		document.getElementsByClassName("appearance-none py-3 px-4 bg-white text-grey-darkest rounded leading-tight focus:outline-none")[0].value = request.format;
 		document.getElementsByClassName("py-3 px-4 bg-white text-grey-darkest leading-tight rounded focus:outline-none shadow visible sm:invisible md:visible")[0].value = request.name;
 		setTimeout(function(){ document.getElementsByClassName("bg-green-dark py-3 px-4 text-white rounded leading-tight focus:outline-none")[0].click(); }, 1000);
-		var link = document.createElement("linktopaste");
+		setTimeout(function(){ var link = document.createElement("linktopaste"); }, 3000);
 		link.innerHTML = window.location.href; 
 		link.select();
 		document.execCommand("copy");

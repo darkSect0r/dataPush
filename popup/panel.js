@@ -29,7 +29,7 @@ function listenForClicks(){
 			
 		/*	| copy and exit function below is broken, needs some attention...|
 			|	Just add a click to the copy-to-clipboard button			 |
-			V																 V
+			V RESPONSE: too late I implemented the clipboard somewhere else :P																 V
 		function exitW() {
 		  browser.tabs.query({currentWindow: true, active: true}).then((tabs) => {
 			var dummy = document.createElement('input'), inText = tabs[0].url;

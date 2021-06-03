@@ -4,7 +4,7 @@
 <br>
 Pre-Release Date: <b>10-27-2020</b><br>
 Official Release Date: <b>TBD</b><br><br>
-<i>Updated: <b>02-18-2021</b></i>
+<i>Updated: <b>12-05-2021</b></i>
 <hr>
 <b>Title:</b> <i>darkSect0r's</i> Pastebin.com extension for Mozilla Firefox v60+.<br>
 <br>
@@ -28,3 +28,4 @@ TheDebianGuy(Programmer)
 <b>Changelog:</b>
 <br>&ensp;&ensp;version 1.0 - pre-released!
 <br>&ensp;&ensp;version 1.1 - added ghostbin.com & throwbin.io
+<br>&ensp;&ensp;version 1.1.1 - added clipboard support

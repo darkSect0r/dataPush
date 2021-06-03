@@ -11,6 +11,9 @@ browser.runtime.onMessage.addListener(request =>
 		document.getElementByName("password").value = request.pass;
 		document.getElementByName("title").value = request.name;
 		setTimeout(function(){ document.getElementsByClassName("btn btn-primary")[0].click(); }, 1000);
-		//setTimeout(function(){ get current window url -> paste url (ez) }, 5000);
 	}
+	setTimeout(function(){ var link = document.createElement("linktopaste"); }, 3000);
+	link.innerHTML = window.location.href; 
+	link.select();
+	document.execCommand("copy");
 });

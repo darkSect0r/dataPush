@@ -4,7 +4,7 @@
 <br>
 Pre-Release Date: <b>10-27-2020</b><br>
 Official Release Date: <b>TBD</b><br><br>
-<i>Updated: <b>12-05-2021</b></i>
+<i>Updated: <b>05-12-2021</b></i>
 <hr>
 <b>Title:</b> <i>darkSect0r's</i> Pastebin.com extension for Mozilla Firefox v60+.<br>
 <br>
@@ -15,8 +15,8 @@ Instead, simply open dataPush, paste your text and click submit and your all don
 Feel free to contribute where ever you see fit. Thank you to all those who contribute to this project, it wouldn't be possible without you.<br>
 <br>
 <b>Contributors:</b> 
-<br>IamLupo(Programmer/Consultant)<br>
-TheDebianGuy(Programmer)
+<br>IamLupo(Programmer/Consultant)
+<br>TheDebianGuy(Programmer)
 <hr>
 <b>How to use:</b> There are 4 easy steps to start testing out this extension!<br>
 <br>&ensp;&ensp;1. Download the repository and extract it to any folder.
@@ -28,4 +28,4 @@ TheDebianGuy(Programmer)
 <b>Changelog:</b>
 <br>&ensp;&ensp;version 1.0 - pre-released!
 <br>&ensp;&ensp;version 1.1 - added ghostbin.com & throwbin.io
-<br>&ensp;&ensp;version 1.1.1 - added clipboard support
+<br>&ensp;&ensp;version 1.2 - added clipboard support

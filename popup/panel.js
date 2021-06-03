@@ -26,22 +26,6 @@ function listenForClicks(){
 			disab = true,
 			pass = document.getElementById("nameDis").value,
 			name = document.getElementById("pName").value;
-			
-		/*	| copy and exit function below is broken, needs some attention...|
-			|	Just add a click to the copy-to-clipboard button			 |
-			V RESPONSE: too late I implemented the clipboard somewhere else :P																 V
-		function exitW() {
-		  browser.tabs.query({currentWindow: true, active: true}).then((tabs) => {
-			var dummy = document.createElement('input'), inText = tabs[0].url;
-			document.body.appendChild(dummy);
-			dummy.value = inText;
-			dummy.select();
-			document.execCommand('copy');
-			document.body.removeChild(dummy);
-			window.close();
-		  });
-		}
-		*/
 		
 		function GoPastebin(text, format, exp, stat, check, disab, pass, name){
 			browser.tabs.create({url:"https://pastebin.com/"}).then((tab) => {
@@ -96,7 +80,7 @@ function listenForClicks(){
 					break;
 				
 				case "Ghostbin":
-				    document.getElementById("nameDis").removeAttribute("disabled");
+				   	document.getElementById("nameDis").removeAttribute("disabled");
 					document.getElementById("syntax").setAttribute("disabled", true);
 					document.getElementById("exposure").setAttribute("disabled", true);
 					document.getElementById("expire").setAttribute("disabled", true);

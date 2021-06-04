@@ -1,4 +1,4 @@
-# dataPush version 1.1 Pre-Release
+# dataPush version 1.2 Pre-Release
 
 <img src="ss.png">
 <br>
